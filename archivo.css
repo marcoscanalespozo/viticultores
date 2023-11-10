@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	background:#ccc;
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	display:flex;
+	flex-flow:row wrap;
+}
+.Enlaces {
+	margin: 10px;
+	display: flex;
+	float: left;
+	
+	  }
+
+body {
+	background-image: url('logo2.jpg');
+}
+
+header {
+	background-color: rgb(243, 242, 197);
+	width:100%;
+	padding:20px;
+
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {
+	color:rgb(255, 255, 255);
+	font-size:30px;
+}
+
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+	line-height:50px;
+}
+
+header nav {
+	width:50%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background:#e41b1b;
+	color:rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+	flex-grow:1;
+}
+
+header nav a:hover {
+	background:#3ce74a;
+}
+
+.main {
+	background:#fff;
+	padding:20px;
+
+	flex:1 1 70%;
+}
+
+.main article {
+	margin-bottom: 20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #000;
+}
+
+.main article:nth-last-child(1){
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom:none;
+}
+
+aside {
+	background:#ff7300;
+	padding:20px;
+	flex:1 1 30%;
+
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+
+aside .widget {
+	background: #ff7300;
+	height:150px;
+	margin:10px;
+}
+
+footer {
+	background:#2c3e50;
+	width: 100%;
+	padding:20px;
+
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .links {
+	background:#e02c2c;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a {
+	flex-grow:1;
+
+	color:rgb(37, 230, 30);
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+
+}
+
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+	}
+
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+	}
+
+	aside {
+		flex-direction:row;
+		flex:0;
+	}
+
+	aside .widget {
+		flex-grow:1;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	aside {
+		flex-direction:column;
+	}
+
+	footer {
+		justify-content:space-around;
+	}
+
+}.n{
+	background: rgb(236, 13, 13);
+	width: 100%;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin-left: 16px 0;
+	font-size: 16px;
+  }
+  
+  #boton:hover{
+	background: rgb(17, 0, 255);
+  }
